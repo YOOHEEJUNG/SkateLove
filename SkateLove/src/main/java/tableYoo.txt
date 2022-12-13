@@ -1,0 +1,10 @@
+CREATE TABLE USERS 
+(  
+    ID VARCHAR2(30 BYTE) primary key,
+    PW VARCHAR2(30 BYTE) NOT NULL, 
+    NAME VARCHAR2(30 BYTE) NOT NULL, 
+    age number(3),
+    phoneno varchar2(30 BYTE) NOT NULL,
+    GENDER CHAR(1 BYTE) check(gender in ('f', 'm'))
+  )
+  

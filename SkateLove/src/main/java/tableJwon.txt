@@ -1,0 +1,17 @@
+create table location (
+    lno number(10) primary key not null,
+    writer varchar2(30) not null,
+    title varchar2(50) not null,
+    content varchar2(500) not null,
+    regdate date default sysdate
+);
+
+
+create table re (
+    rno number(10) primary key not null,
+    writer varchar2(30) not null,
+    title varchar2(50) not null,
+    content varchar2(500) not null,
+    regdate date default sysdate
+);
+  
